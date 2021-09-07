@@ -13,7 +13,7 @@ def main():
     server.bind(('127.0.0.1', port))  # bind port
     server.listen(8)
     print("Waiting for connection... \n")
-    csvfile = open('log.csv', 'w')
+    csvfile = open('log2.csv', 'w')
     writer = csv.writer(csvfile)
     header = ['event_timestamp', 'node_name', 'event', 'log_timestamp', 'message_length', 'log_time']
     writer.writerow(header)
